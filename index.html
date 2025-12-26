@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grit & Grace Professional Cleaning Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'soft-pink': '#E8A5B8',
+              'charcoal': '#4A4A4A',
+              'cream': '#F9F5F0',
+            },
+            fontFamily: {
+              'display': ['Playfair Display', 'serif'],
+              'serif': ['Lora', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Lora', serif;
+        background-color: #F9F5F0;
+      }
+
+      .title-main {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #D97FA3;
+        letter-spacing: 1px;
+      }
+
+      .service-title {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        color: #D97FA3;
+        font-size: 1.5rem;
+      }
+
+      .service-label {
+        background: #D97FA3;
+        color: white;
+        padding: 0.5rem 1rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 0.875rem;
+      }
+
+      .decorative-line {
+        height: 2px;
+        background: linear-gradient(to right, transparent, #D97FA3, transparent);
+        margin: 1.5rem 0;
+      }
+
+      .card-hover {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 35px rgba(217, 127, 163, 0.15);
+      }
+
+      .btn-primary {
+        background: #D97FA3;
+        transition: all 0.3s ease;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+      }
+
+      .btn-primary:hover {
+        background: #C86B92;
+        box-shadow: 0 8px 20px rgba(217, 127, 163, 0.3);
+      }
+
+      .smooth-scroll {
+        scroll-behavior: smooth;
+      }
+
+      .cta-text {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        color: #D97FA3;
+        font-size: 1.75rem;
+      }
+    </style>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body class="smooth-scroll text-charcoal" style="background-color: #F9F5F0;">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full top-0 z-50">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+          <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: #D97FA3;">
+            <span class="text-white font-bold text-xl" style="font-family: 'Playfair Display', serif;">G&G</span>
+          </div>
+          <span class="ml-3 text-xl font-semibold text-charcoal hidden sm:block" style="font-family: 'Playfair Display', serif;">Grit & Grace</span>
+        </div>
+
+        <div class="hidden md:flex space-x-8">
+          <a href="#services" class="text-charcoal hover:text-soft-pink transition duration-300 font-medium">Services</a>
+          <a href="#about" class="text-charcoal hover:text-soft-pink transition duration-300 font-medium">About</a>
+          <a href="#contact" class="text-charcoal hover:text-soft-pink transition duration-300 font-medium">Contact</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden text-charcoal">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </nav>
+
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <a href="#services" class="block px-6 py-3 text-charcoal hover:bg-soft-pink hover:text-white transition duration-300">Services</a>
+        <a href="#about" class="block px-6 py-3 text-charcoal hover:bg-soft-pink hover:text-white transition duration-300">About</a>
+        <a href="#contact" class="block px-6 py-3 text-charcoal hover:bg-soft-pink hover:text-white transition duration-300">Contact</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[70vh] flex items-center justify-center mt-16 py-20" style="background: linear-gradient(135deg, rgba(232, 165, 184, 0.15) 0%, rgba(249, 245, 240, 0.9) 100%);">
+      <div class="relative z-10 text-center px-6 max-w-4xl">
+        <div class="mb-8">
+          <p class="text-sm tracking-widest text-charcoal mb-4">PROFESSIONAL</p>
+          <h1 class="title-main mb-2">CLEANING SERVICES</h1>
+          <div class="decorative-line"></div>
+        </div>
+        <p class="text-lg text-charcoal mb-8 leading-relaxed">
+          Exceptional cleaning solutions delivered with care and attention to detail
+        </p>
+        <a href="tel:513-567-3727" class="btn-primary inline-block px-12 py-4 text-white text-lg rounded-lg shadow-lg">
+          Call Now: (513) 567-3727
+        </a>
+      </div>
+    </section>
+
+    <!-- Services/Pricing Section -->
+    <section id="services" class="py-20" style="background-color: #F9F5F0;">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="title-main mb-2">Our Services</h2>
+          <div class="decorative-line" style="max-width: 200px; margin: 1.5rem auto;"></div>
+          <p class="text-lg text-charcoal max-w-2xl mx-auto">
+            Choose the perfect cleaning package for your home
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Fresh Start -->
+          <div class="bg-white shadow-lg card-hover" style="border: 1px solid #E0D5D0;">
+            <div class="service-label">Basic Package</div>
+            <div class="p-8">
+              <h3 class="service-title mb-2">Fresh Start</h3>
+              <div class="text-2xl font-bold mb-6" style="color: #D97FA3;">Starting at $85</div>
+            <ul class="space-y-2 text-charcoal text-sm mb-8">
+              <li>• Dusting & wiping surfaces</li>
+              <li>• Vacuuming & mopping</li>
+              <li>• Kitchen & bathroom cleaning</li>
+              <li>• Trash removal</li>
+              <li>• Light tidying</li>
+            </ul>
+            <a href="#contact" class="block w-full text-center btn-primary text-white py-3 rounded transition duration-300 font-semibold">
+              Book Now
+            </a>
+            </div>
+          </div>
+
+          <!-- Deep Shine -->
+          <div class="bg-white shadow-lg card-hover" style="border: 1px solid #E0D5D0;">
+            <div class="service-label">Deluxe Package</div>
+            <div class="p-8">
+              <h3 class="service-title mb-2">Deep Shine</h3>
+              <div class="text-2xl font-bold mb-6" style="color: #D97FA3;">Starting at $150</div>
+            <ul class="space-y-2 text-charcoal text-sm mb-8">
+              <li>• Includes BASIC, plus:</li>
+              <li>• Baseboards & doors</li>
+              <li>• Window sills & tracks</li>
+              <li>• Shower & grout scrub</li>
+              <li>• Fans & fixtures dusted</li>
+            </ul>
+            <a href="#contact" class="block w-full text-center btn-primary text-white py-3 rounded transition duration-300 font-semibold">
+              Book Now
+            </a>
+            </div>
+          </div>
+
+          <!-- Total Transformation -->
+          <div class="bg-white shadow-lg card-hover" style="border: 1px solid #E0D5D0;">
+            <div class="service-label">Premium Package</div>
+            <div class="p-8">
+              <h3 class="service-title mb-2">Total Transformation</h3>
+              <div class="text-2xl font-bold mb-6" style="color: #D97FA3;">Starting at $250</div>
+            <ul class="space-y-2 text-charcoal text-sm mb-8">
+              <li>• Includes BASIC + DELUXE, plus:</li>
+              <li>• Inside fridge & oven</li>
+              <li>• Inside cabinets</li>
+              <li>• Blinds & walls dusted</li>
+              <li>• Wall spot cleaning</li>
+            </ul>
+            <a href="#contact" class="block w-full text-center btn-primary text-white py-3 rounded transition duration-300 font-semibold">
+              Book Now
+            </a>
+            </div>
+          </div>
+
+          <!-- Move-In/Move-Out -->
+          <div class="bg-white shadow-lg card-hover" style="border: 1px solid #E0D5D0;">
+            <div class="service-label">Move Package</div>
+            <div class="p-8">
+              <h3 class="service-title mb-2">Move-In/Move-Out</h3>
+              <div class="text-2xl font-bold mb-6" style="color: #D97FA3;">Starting at $250</div>
+            <ul class="space-y-2 text-charcoal text-sm mb-8">
+              <li>• Full home deep clean</li>
+              <li>• Inside all cabinets</li>
+              <li>• Fridge & oven cleaned</li>
+              <li>• Closets & shelves</li>
+              <li>• Floors scrubbed</li>
+            </ul>
+            <a href="#contact" class="block w-full text-center btn-primary text-white py-3 rounded transition duration-300 font-semibold">
+              Book Now
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16" style="background-color: #F9F5F0;">
+      <div class="container mx-auto px-6 text-center">
+        <p class="cta-text mb-6">Call Today For A Free Estimate!</p>
+        <p class="text-lg text-charcoal">
+          <span class="font-semibold">513-567-3727</span> | gritgrace513@gmail.com
+        </p>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20" style="background-color: #F9F5F0;">
+      <div class="container mx-auto px-6">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="title-main mb-4">About Grit & Grace</h2>
+          <div class="decorative-line" style="max-width: 200px; margin: 1.5rem auto;"></div>
+          <p class="text-lg text-charcoal mb-6 leading-relaxed">
+            At Grit & Grace Professional Cleaning Services, we combine determination with elegance to deliver exceptional cleaning solutions for your home. Our experienced team is dedicated to creating spotless, healthy environments that you can be proud of.
+          </p>
+          <p class="text-lg text-charcoal leading-relaxed">
+            We understand that your home is your sanctuary, and we treat it with the care and respect it deserves. With attention to detail and a commitment to excellence, we ensure every corner shines.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20" style="background-color: #F9F5F0;">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="title-main mb-4">Get In Touch</h2>
+          <div class="decorative-line" style="max-width: 200px; margin: 1.5rem auto;"></div>
+          <p class="text-lg text-charcoal">Ready to transform your space? Contact us today!</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          <!-- Contact Info -->
+          <div class="space-y-8">
+            <div class="bg-white shadow-lg p-8" style="border: 1px solid #E0D5D0;">
+              <h3 class="service-title mb-6">Contact Information</h3>
+
+              <div class="space-y-6">
+                <div class="flex items-center">
+                  <div class="bg-soft-pink rounded-full p-4 mr-4">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-600 text-sm">Phone</p>
+                    <a href="tel:513-567-3727" class="text-lg font-semibold text-charcoal hover:text-soft-pink transition duration-300">
+                      (513) 567-3727
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex items-center">
+                  <div class="bg-soft-pink rounded-full p-4 mr-4">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-gray-600 text-sm">Email</p>
+                    <a href="mailto:gritgrace513@gmail.com" class="text-lg font-semibold text-charcoal hover:text-soft-pink transition duration-300">
+                      gritgrace513@gmail.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="shadow-lg p-8 text-white rounded" style="background: #D97FA3;">
+              <h3 class="text-2xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">Why Choose Us?</h3>
+              <ul class="space-y-3">
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Professional & Experienced Team</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Eco-Friendly Products</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Flexible Scheduling</span>
+                </li>
+                <li class="flex items-center">
+                  <svg class="w-5 h-5 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  <span>Satisfaction Guaranteed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="bg-white shadow-lg p-8" style="border: 1px solid #E0D5D0;">
+            <h3 class="service-title mb-6">Send Us a Message</h3>
+            <form id="contact-form" class="space-y-6">
+              <div>
+                <label for="name" class="block text-sm font-medium text-charcoal mb-2">Full Name</label>
+                <input type="text" id="name" name="name" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300"
+                  placeholder="John Doe">
+              </div>
+
+              <div>
+                <label for="email" class="block text-sm font-medium text-charcoal mb-2">Email Address</label>
+                <input type="email" id="email" name="email" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300"
+                  placeholder="john@example.com">
+              </div>
+
+              <div>
+                <label for="phone" class="block text-sm font-medium text-charcoal mb-2">Phone Number</label>
+                <input type="tel" id="phone" name="phone"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300"
+                  placeholder="(513) 567-3727">
+              </div>
+
+              <div>
+                <label for="service" class="block text-sm font-medium text-charcoal mb-2">Service Interested In</label>
+                <select id="service" name="service"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300">
+                  <option value="">Select a service</option>
+                  <option value="fresh-start">Fresh Start ($85+)</option>
+                  <option value="deep-shine">Deep Shine ($150+)</option>
+                  <option value="total-transformation">Total Transformation ($250+)</option>
+                  <option value="move-in-out">Move-In/Move-Out ($250+)</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message" class="block text-sm font-medium text-charcoal mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" required
+                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300"
+                  placeholder="Tell us about your cleaning needs..."></textarea>
+              </div>
+
+              <button type="submit"
+                class="w-full btn-primary text-white py-3 rounded-lg font-semibold shadow-lg">
+                Send Message
+              </button>
+            </form>
+            <div id="form-message" class="mt-4 text-center hidden"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white py-8" style="background: #4A4A4A;">
+      <div class="container mx-auto px-6 text-center">
+        <div class="flex items-center justify-center mb-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3" style="background: #D97FA3;">
+            <span class="text-white font-bold" style="font-family: 'Playfair Display', serif;">G&G</span>
+          </div>
+          <span class="text-xl font-semibold" style="font-family: 'Playfair Display', serif;">Grit & Grace Professional Cleaning</span>
+        </div>
+        <p class="text-gray-300 mb-4">
+          Professional cleaning services you can trust
+        </p>
+        <p class="text-sm text-gray-400">
+          &copy; 2024 Grit & Grace Professional Cleaning Services. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            mobileMenu.classList.add('hidden');
+            const offset = 80;
+            const targetPosition = target.offsetTop - offset;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+
+      document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        const formMessage = document.getElementById('form-message');
+        formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
+        formMessage.className = 'mt-4 text-center text-green-600 font-semibold';
+        formMessage.classList.remove('hidden');
+
+        this.reset();
+
+        setTimeout(() => {
+          formMessage.classList.add('hidden');
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>
