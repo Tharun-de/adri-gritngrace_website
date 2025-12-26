@@ -102,9 +102,7 @@
     <header class="bg-white shadow-md fixed w-full top-0 z-50">
       <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
         <div class="flex items-center">
-          <div class="w-12 h-12 rounded-full flex items-center justify-center" style="background: #D97FA3;">
-            <span class="text-white font-bold text-xl" style="font-family: 'Playfair Display', serif;">G&G</span>
-          </div>
+          <img src="pictures/logo.jpg" alt="Grit & Grace logo" class="w-12 h-12 rounded-full object-cover" />
           <span class="ml-3 text-xl font-semibold text-charcoal hidden sm:block" style="font-family: 'Playfair Display', serif;">Grit & Grace</span>
         </div>
 
@@ -129,7 +127,10 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative min-h-[70vh] flex items-center justify-center mt-16 py-20" style="background: linear-gradient(135deg, rgba(232, 165, 184, 0.15) 0%, rgba(249, 245, 240, 0.9) 100%);">
+    <section
+      class="relative min-h-[70vh] flex items-center justify-center mt-16 py-20"
+      style="background-image: linear-gradient(135deg, rgba(232, 165, 184, 0.25) 0%, rgba(249, 245, 240, 0.9) 100%), url('pictures/cover picture.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;"
+    >
       <div class="relative z-10 text-center px-6 max-w-4xl">
         <div class="mb-8">
           <p class="text-sm tracking-widest text-charcoal mb-4">PROFESSIONAL</p>
@@ -339,56 +340,33 @@
             </div>
           </div>
 
-          <!-- Contact Form -->
-          <div class="bg-white shadow-lg p-8" style="border: 1px solid #E0D5D0;">
-            <h3 class="service-title mb-6">Send Us a Message</h3>
-            <form id="contact-form" class="space-y-6">
-              <div>
-                <label for="name" class="block text-sm font-medium text-charcoal mb-2">Full Name</label>
-                <input type="text" id="name" name="name" required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300"
-                  placeholder="John Doe">
-              </div>
-
-              <div>
-                <label for="email" class="block text-sm font-medium text-charcoal mb-2">Email Address</label>
-                <input type="email" id="email" name="email" required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300"
-                  placeholder="john@example.com">
-              </div>
-
-              <div>
-                <label for="phone" class="block text-sm font-medium text-charcoal mb-2">Phone Number</label>
-                <input type="tel" id="phone" name="phone"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300"
-                  placeholder="(513) 567-3727">
-              </div>
-
-              <div>
-                <label for="service" class="block text-sm font-medium text-charcoal mb-2">Service Interested In</label>
-                <select id="service" name="service"
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300">
-                  <option value="">Select a service</option>
-                  <option value="fresh-start">Fresh Start ($85+)</option>
-                  <option value="deep-shine">Deep Shine ($150+)</option>
-                  <option value="total-transformation">Total Transformation ($250+)</option>
-                  <option value="move-in-out">Move-In/Move-Out ($250+)</option>
-                </select>
-              </div>
-
-              <div>
-                <label for="message" class="block text-sm font-medium text-charcoal mb-2">Message</label>
-                <textarea id="message" name="message" rows="4" required
-                  class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-soft-pink focus:border-transparent transition duration-300"
-                  placeholder="Tell us about your cleaning needs..."></textarea>
-              </div>
-
-              <button type="submit"
-                class="w-full btn-primary text-white py-3 rounded-lg font-semibold shadow-lg">
-                Send Message
-              </button>
-            </form>
-            <div id="form-message" class="mt-4 text-center hidden"></div>
+          <!-- Highlights / Promise -->
+          <div class="shadow-lg rounded p-8 text-white flex flex-col justify-between" style="background: #D97FA3; border: 1px solid #E0D5D0;">
+            <div>
+              <h3 class="text-2xl font-bold mb-4" style="font-family: 'Playfair Display', serif;">What You Can Expect</h3>
+              <p class="mb-4 text-sm leading-relaxed">
+                From the first call to the final walkthrough, we make sure every visit feels professional, friendly,
+                and stress-free.
+              </p>
+              <ul class="space-y-3 text-sm">
+                <li class="flex items-start">
+                  <span class="mt-1 mr-3 text-lg">✓</span>
+                  <span>Clear communication about pricing, schedule, and what&apos;s included.</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mt-1 mr-3 text-lg">✓</span>
+                  <span>Respect for your home and belongings—shoe covers, careful handling, and tidy finishes.</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mt-1 mr-3 text-lg">✓</span>
+                  <span>Consistent quality every single clean, with an eye for the little details.</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 border-t border-pink-200 pt-4 text-sm">
+              <p class="font-semibold">Have questions?</p>
+              <p>Reach out by phone or email and we&apos;ll help you choose the perfect service for your home.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -398,9 +376,7 @@
     <footer class="text-white py-8" style="background: #4A4A4A;">
       <div class="container mx-auto px-6 text-center">
         <div class="flex items-center justify-center mb-4">
-          <div class="w-10 h-10 rounded-full flex items-center justify-center mr-3" style="background: #D97FA3;">
-            <span class="text-white font-bold" style="font-family: 'Playfair Display', serif;">G&G</span>
-          </div>
+          <img src="pictures/logo.jpg" alt="Grit & Grace logo" class="w-10 h-10 rounded-full object-cover mr-3" />
           <span class="text-xl font-semibold" style="font-family: 'Playfair Display', serif;">Grit & Grace Professional Cleaning</span>
         </div>
         <p class="text-gray-300 mb-4">
@@ -434,21 +410,6 @@
             });
           }
         });
-      });
-
-      document.getElementById('contact-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-
-        const formMessage = document.getElementById('form-message');
-        formMessage.textContent = 'Thank you for your message! We will get back to you soon.';
-        formMessage.className = 'mt-4 text-center text-green-600 font-semibold';
-        formMessage.classList.remove('hidden');
-
-        this.reset();
-
-        setTimeout(() => {
-          formMessage.classList.add('hidden');
-        }, 5000);
       });
     </script>
   </body>
